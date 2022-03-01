@@ -1,0 +1,16 @@
+<div class="uploader" *ngIf="!selectedFile">
+  <h4 class="title">Upload your image</h4>
+  <p class="file--type">File should be Jpeg, Png,...</p>
+  <div class="uploader--box">
+    <input type="file" class="file-input"
+           (change)="onFileSelected($event)" #fileUpload>
+    <img
+      (click)="fileUpload.click()"
+      src="assets/images/image.svg"
+      alt="this is where you click to upload your image"
+      class="uploader--img">
+    <p class="indication">Drag & Drop your image here...</p>
+  </div>
+  <p>or</p>
+  <button (click)="fileUpload.click()" class="choose--file">Choose a file</button>
+</div>
