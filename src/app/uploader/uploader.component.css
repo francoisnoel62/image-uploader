@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 
-
 .uploader {
   background: #FFFFFF;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -11,7 +10,10 @@
   text-align: center;
   width: 400px;
   padding: 25px;
+}
 
+/*FIRST DIV*/
+.file--selection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +21,7 @@
 
 .title {
   font-style: normal;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -58,9 +61,10 @@
   margin-top: 20px;
 }
 
-.uploader > p:nth-child(4) {
+.uploader > div > p:nth-child(4) {
   font-size: 12px;
   color: #BDBDBD;
+  margin: revert;
 }
 
 .choose--file {
@@ -78,3 +82,20 @@
   padding: 7px 15px;
 }
 
+/*SECOND DIV*/
+.uploading--box > p {
+  font-size: 18px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.uploading--box > mat-progress-bar {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: #2F80ED;
+}

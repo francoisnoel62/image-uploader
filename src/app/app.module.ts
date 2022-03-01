@@ -10,6 +10,14 @@ import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { UploaderComponent } from './uploader/uploader.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatSliderModule} from "@angular/material/slider";
+
 
 @NgModule({
   declarations: [
@@ -21,7 +29,13 @@ import { UploaderComponent } from './uploader/uploader.component';
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatExpansionModule,
+    MatButtonToggleModule,
+    MatDatepickerModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
