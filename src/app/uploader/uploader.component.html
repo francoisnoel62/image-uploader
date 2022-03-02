@@ -16,9 +16,16 @@
     <button (click)="fileUpload.click()" class="choose--file">Choose a file</button>
   </div>
 
-  <div class="uploading--box">
+  <div class="uploading--box" *ngIf="selectedFile && !downloadURL">
     <p>Uploading...</p>
-    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <mat-progress-bar mode="determinate" value="{{uploadPercent | async}}"></mat-progress-bar>
+  </div>
+
+  <div class="uploaded" *ngIf="downloadURL">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">check_circle</mat-icon>
+    <p>Uploaded Successfully!</p>
+    <img src="{{ downloadURL | async }}" alt="here is the image you just downloaded" class="image--dowloaded">
+
   </div>
 </div>
 

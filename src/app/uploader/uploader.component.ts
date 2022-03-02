@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireStorage} from "@angular/fire/compat/storage";
+import {finalize, Observable} from "rxjs";
 
 @Component({
   selector: 'app-uploader',
@@ -10,11 +11,25 @@ export class UploaderComponent {
 
   selectedFile: File | undefined;
 
+  uploadPercent: Observable<number> | undefined;
+  downloadURL: Observable<string> | undefined;
+
   constructor(private af:AngularFireStorage) { }
 
   onFileSelected(event: any) {
     this.selectedFile = <File>event.target.files[0];
-    this.af.upload("/files"+Math.random()+this.selectedFile, this.selectedFile);
-  }
+    const filePath = "/files/"+Math.random()+this.selectedFile;
+    const fileRef = this.af.ref(filePath);
+    const task = this.af.upload(filePath, this.selectedFile);
 
+    // observe percentage changes
+    // @ts-ignore
+    this.uploadPercent = task.percentageChanges();
+    // get notified when the download URL is available
+    task.snapshotChanges().pipe(
+      finalize(() => this.downloadURL = fileRef.getDownloadURL() )
+    )
+      .subscribe()
+
+  }
 }
