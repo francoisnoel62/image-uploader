@@ -108,3 +108,47 @@
 .image--dowloaded {
   width: 80%;
 }
+
+.url {
+  background: #F6F8FB;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  height: 35px;
+  margin-top: 25px;
+}
+
+.image--url {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+
+
+.image--url > p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: -0.035em;
+  color: #4F4F4F;
+  margin: auto;
+}
+
+.copy--btn {
+  background: #2F80ED;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: -0.035em;
+  width: 75px;
+  font-family: 'Poppins', sans-serif;
+  margin: 1px 1px 1px 10px;
+}

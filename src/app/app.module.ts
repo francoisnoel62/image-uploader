@@ -18,6 +18,8 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatSliderModule} from "@angular/material/slider";
 import {MatIconModule} from "@angular/material/icon";
+import { MatButtonModule} from "@angular/material/button";
+import {ClipboardModule} from "@angular/cdk/clipboard";
 
 
 @NgModule({
@@ -25,20 +27,22 @@ import {MatIconModule} from "@angular/material/icon";
     AppComponent,
     UploaderComponent
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AngularFireModule.initializeApp(environment.firebase),
-        AngularFireDatabaseModule,
-        AngularFireStorageModule,
-        BrowserAnimationsModule,
-        MatProgressBarModule,
-        MatExpansionModule,
-        MatButtonToggleModule,
-        MatDatepickerModule,
-        MatSliderModule,
-        MatIconModule
-    ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireStorageModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatExpansionModule,
+    MatButtonToggleModule,
+    MatDatepickerModule,
+    MatSliderModule,
+    MatIconModule,
+    MatButtonModule,
+    ClipboardModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

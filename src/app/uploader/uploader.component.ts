@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { AngularFireStorage} from "@angular/fire/compat/storage";
 import {finalize, Observable} from "rxjs";
+import { Clipboard } from '@angular/cdk/clipboard';
+
 
 @Component({
   selector: 'app-uploader',
@@ -14,7 +16,7 @@ export class UploaderComponent {
   uploadPercent: Observable<number> | undefined;
   downloadURL: Observable<string> | undefined;
 
-  constructor(private af:AngularFireStorage) { }
+  constructor(private af:AngularFireStorage, private cb: Clipboard) { }
 
   onFileSelected(event: any) {
     this.selectedFile = <File>event.target.files[0];
@@ -32,4 +34,5 @@ export class UploaderComponent {
       .subscribe()
 
   }
+
 }

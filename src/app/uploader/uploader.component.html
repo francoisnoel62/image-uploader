@@ -1,4 +1,4 @@
-<div class="uploader" >
+<div class="uploader">
   <div class="file--selection" *ngIf="!selectedFile">
     <h4 class="title">Upload your image</h4>
     <p class="file--type">File should be Jpeg, Png,...</p>
@@ -21,12 +21,18 @@
     <mat-progress-bar mode="determinate" value="{{uploadPercent | async}}"></mat-progress-bar>
   </div>
 
-  <div class="uploaded" *ngIf="downloadURL">
+  <div class="uploaded">
     <mat-icon aria-hidden="false" aria-label="Example home icon">check_circle</mat-icon>
     <p>Uploaded Successfully!</p>
     <img src="{{ downloadURL | async }}" alt="here is the image you just downloaded" class="image--dowloaded">
-
+    <div class="url">
+      <div class="image--url">
+        <p>{{downloadURL | async}}</p>
+      </div>
+      <button mat-flat-button class="copy--btn">Copy Link</button>
+    </div>
   </div>
 </div>
 
+<!--*ngIf="downloadURL"-->
 
