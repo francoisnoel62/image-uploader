@@ -1,27 +1,69 @@
-# ImageUploader
+<!-- Please update value in the {}  -->
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+<h1 align="center">{IMAGE UPLOADER}</h1>
 
-## Development server
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<div align="center">
+  <h3>
+    <a href="https://image--uploader-6d7e1.web.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://{your-url-to-the-solution}">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Code scaffolding
+<!-- TABLE OF CONTENTS -->
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table of Contents
 
-## Build
+- [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Built With
 
-## Running unit tests
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular13
+- Firebase Storage
+- Firebase Hosting
 
-## Running end-to-end tests
+## Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-## Further help
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx) was to build an application to complete the given user stories.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## How To Use
+
+<!-- Example: -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
+
+## Contact
+
+francoisnoel62@gmail.com
