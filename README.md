@@ -36,7 +36,7 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- Angular13
+- Angular 13
 - Firebase Storage
 - Firebase Hosting
 
