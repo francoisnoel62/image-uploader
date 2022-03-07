@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://image--uploader-6d7e1.web.app/">
+    <a href="https://image-uploader-demo.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -37,8 +37,7 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - Angular 13
-- Firebase Storage
-- Firebase Hosting
+- Deploy on Netlify
 
 ## Features
 
